@@ -88,6 +88,12 @@
     <Compile Include="frm메인.Designer.cs">
       <DependentUpon>frm메인.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSelection_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelection_Selection.Designer.cs">
+      <DependentUpon>frmSelection_Selection.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm코드관리_코드등록.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm메인.resx">
       <DependentUpon>frm메인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelection_Selection.resx">
+      <DependentUpon>frmSelection_Selection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm코드관리_코드등록.resx">
       <DependentUpon>frm코드관리_코드등록.cs</DependentUpon>

@@ -84,5 +84,10 @@ namespace GABMS
         {
             FrmShow2("frm파일_설정");
         }
+
+        private void mSelection_Selection_Click(object sender, EventArgs e)
+        {
+            FrmShow2("frmSelection_Selection");
+        }
     }
 }

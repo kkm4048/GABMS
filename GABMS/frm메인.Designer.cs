@@ -39,6 +39,8 @@
             this.m기초데이타_품종등록 = new System.Windows.Forms.ToolStripMenuItem();
             this.m코드관리 = new System.Windows.Forms.ToolStripMenuItem();
             this.m코드관리_코드등록 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mSelection = new System.Windows.Forms.ToolStripMenuItem();
+            this.mSelection_Selection = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +57,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.m파일,
             this.m기초데이타,
-            this.m코드관리});
+            this.m코드관리,
+            this.mSelection});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1372, 24);
@@ -129,6 +132,21 @@
             this.m코드관리_코드등록.Text = "코드 등록";
             this.m코드관리_코드등록.Click += new System.EventHandler(this.m코드관리_코드등록_Click);
             // 
+            // mSelection
+            // 
+            this.mSelection.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mSelection_Selection});
+            this.mSelection.Name = "mSelection";
+            this.mSelection.Size = new System.Drawing.Size(68, 20);
+            this.mSelection.Text = "Selection";
+            // 
+            // mSelection_Selection
+            // 
+            this.mSelection_Selection.Name = "mSelection_Selection";
+            this.mSelection_Selection.Size = new System.Drawing.Size(180, 22);
+            this.mSelection_Selection.Text = "Selection";
+            this.mSelection_Selection.Click += new System.EventHandler(this.mSelection_Selection_Click);
+            // 
             // frm메인
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -140,7 +158,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm메인";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "유전체육종관리시스템   GABMS (Genome Assisted Breeding Management System)  v1.1 221112";
+            this.Text = "유전체육종관리시스템   GABMS (Genome Assisted Breeding Management System)  v1.1 221112 2212" +
+    "28";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -161,6 +180,8 @@
         private System.Windows.Forms.ToolStripMenuItem m기초데이타_품종등록;
         private System.Windows.Forms.ToolStripMenuItem m코드관리;
         private System.Windows.Forms.ToolStripMenuItem m코드관리_코드등록;
+        private System.Windows.Forms.ToolStripMenuItem mSelection;
+        private System.Windows.Forms.ToolStripMenuItem mSelection_Selection;
     }
 }
 
