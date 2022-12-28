@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A731287-3BBB-41B0-9707-0D1145F02E8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GABMS</RootNamespace>
+    <AssemblyName>GABMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeX">
+      <HintPath>lib\BarcodeX.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=14.45.20201.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3526\Bin\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=14.45.20201.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3526\Bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=14.45.20201.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FarPoint Technologies\Spread.WinForms.4.dotNet35\v4.0.3526\Bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_color.cs" />
+    <Compile Include="cls_com.cs" />
+    <Compile Include="frm기초데이타_품종등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초데이타_품종등록.designer.cs">
+      <DependentUpon>frm기초데이타_품종등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기초데이타_사용자등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기초데이타_사용자등록.designer.cs">
+      <DependentUpon>frm기초데이타_사용자등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm기타_엑셀등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm기타_엑셀등록.designer.cs">
+      <DependentUpon>frm기타_엑셀등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm메인.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm메인.Designer.cs">
+      <DependentUpon>frm메인.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm코드관리_코드등록.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm코드관리_코드등록.Designer.cs">
+      <DependentUpon>frm코드관리_코드등록.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm파일_설정.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm파일_설정.designer.cs">
+      <DependentUpon>frm파일_설정.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm기초데이타_품종등록.resx">
+      <DependentUpon>frm기초데이타_품종등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기초데이타_사용자등록.resx">
+      <DependentUpon>frm기초데이타_사용자등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm기타_엑셀등록.resx">
+      <DependentUpon>frm기타_엑셀등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm메인.resx">
+      <DependentUpon>frm메인.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm코드관리_코드등록.resx">
+      <DependentUpon>frm코드관리_코드등록.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm파일_설정.resx">
+      <DependentUpon>frm파일_설정.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\fail.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\fail2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\ok.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\ok2.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
